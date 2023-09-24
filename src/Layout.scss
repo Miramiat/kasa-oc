@@ -1,0 +1,21 @@
+body {
+  width: auto;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+
+  main {
+    padding-left: 100px;
+    padding-right: 100px;
+
+    @media (max-width: 768px) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+  }
+
+  .footerF {
+    padding: 0px;
+  }
+
+}

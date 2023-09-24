@@ -1,0 +1,54 @@
+.details-container{
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  width: 100%; 
+  gap: 70px;
+  margin-bottom: 20px;
+  @media (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  }
+  .collapse {
+    width: 100%;
+    margin-left: -20px;
+    margin-right: -20px; 
+    .collapse-header {    
+      cursor: pointer;
+      font-size: 1.2em;
+      background-color: #FF6060;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      height: 52px;
+      @media (max-width: 768px){
+        height: 30px;
+        font-size: 0.9em;
+        border-radius: 5px;
+      }
+
+      .arrow {
+        color: adjust-hue($color: white, $degrees: 0);
+        font-size: 1.1em;
+        transition: transform 0.3s ease;
+      
+        i {
+          transform-origin: center;
+          transform: rotate(0deg); // Angle initial
+        }
+      }
+  
+      &.open {
+        .arrow {
+          i {
+            transform: rotate(180deg); // Angle lorsque le collapse est ouvert
+          }
+        }
+      }
+    }
+  }
+  
+  

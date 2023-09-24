@@ -1,0 +1,30 @@
+
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.collapse-content {
+  display: none;
+  font-size: 1.125em;
+  color: #FF6060;
+  @media (max-width: 768px){
+    font-size: 0.8em;
+  }
+}
+
+.collapse-content.open {
+  display: block;
+  background-color: #F6F6F6;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px){
+
+
+}

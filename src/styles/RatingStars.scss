@@ -1,0 +1,22 @@
+
+
+.rating-stars {
+    display: inline-block;
+    font-size: 20px; 
+    color: #FF6060;
+    gap: 20px; 
+  }
+  
+  .far.fa-star::before {
+    content: '\f005';
+    margin-left: 12px;
+    color: #e3e3e3; 
+    font-weight: 900;
+  }
+  
+  .fas.fa-star::before {
+    content: '\f005';
+    margin-left: 12px; 
+  }
+  
+  

@@ -1,0 +1,87 @@
+.apartment-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  background-color: rgb(239, 241, 245);
+  border-radius: 20px;
+  padding: 55px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  gap: 30px;
+  max-height: 700px; 
+  overflow-y: auto; 
+
+  .apartment-card {
+    width: calc(33.33% - 40px);
+    margin-bottom: 20px;
+    position: relative;
+    box-sizing: border-box;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      object-position: center;
+      position: relative;
+      border-radius: 10px;
+      box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .FadeAway {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      background: linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+      background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+      background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+      background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+      -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgb(255, 255, 255), endColorstr=rgb(0, 0, 0));
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgb(255, 255, 255), endColorstr=rgb(0, 0, 0));
+      border-radius: 10px;
+    }
+
+    h2 {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: #fff;
+      padding: 5px 10px;
+      margin: 0;
+      font-size: 16px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .apartment-cards {
+    background-color: white;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    gap: 10px;
+    max-height: 800px; /* Ajustez cette valeur en fonction de votre contenu */
+    overflow-y: auto; 
+    
+    .apartment-card {
+      width: 100%;
+      margin-bottom: 10px;
+      h2{
+        font-size: 0.8em;
+      }
+
+      img {
+        height: 255px;
+      }
+    }
+  }
+}
