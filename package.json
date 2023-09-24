@@ -1,4 +1,5 @@
 {
+  "homepage": "https://miramiat.github.io/kasa-oc",
   "name": "kasa-oc",
   "version": "0.1.0",
   "private": true,
@@ -17,7 +18,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "node-sass --watch src/styles -o src/styles"
+    "sass": "node-sass --watch src/styles -o src/styles",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -32,6 +35,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "node-sass": "^7.0.3"
   }
 }
