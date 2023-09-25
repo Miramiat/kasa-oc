@@ -2,6 +2,7 @@
 import React from 'react';
 import '../styles/NotFound.scss';
 import '../pages/ApartmentDscrpt';
+import { Link } from 'react-router-dom';
 
 
 function NotFound() {
