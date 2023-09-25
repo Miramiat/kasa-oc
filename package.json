@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sass": "node-sass --watch src/styles -o src/styles",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp public/NotFound.html build/NotFound.html",
     "deploy": "gh-pages -d build"
   },
   "browserslist": {
