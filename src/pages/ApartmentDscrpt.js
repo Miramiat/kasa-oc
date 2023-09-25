@@ -22,7 +22,7 @@ function ApartmentDscrpt() {
   return (
     <div>
       <Slide images={apartment.pictures} />
-      <AutresDetails className="Bon"
+      <AutresDetails
         host={apartment.host}
         location={apartment.location}
         tags={apartment.tags}

@@ -8,20 +8,18 @@ function Home() {
   const homeTitle = "Chez vous, partout et ailleurs"; 
   return (
     <div>
-      
       <Banner title={homeTitle} image={HomeImage} />
-      {location.pathname === '/' ? <ApartmentCards /> : null}
-      {location.pathname.startsWith('/apartments/') ? (
-        <div>
-          {<ApartmentDscrpt />}
-        </div>
-      ) : null}      
+      <ApartmentCards />
     </div>
-  
   );
 }
 
 export default Home;
+
+
+
+
+
 
 
 

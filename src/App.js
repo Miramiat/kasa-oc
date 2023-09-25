@@ -11,10 +11,10 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/apartments/:id" element={<ApartmentDscrpt />} />
-          <Route component={NotFound} />
+          <Route path="*" element={<NotFound />} /> 
         </Routes>
       </Layout>
     </BrowserRouter>
@@ -22,4 +22,7 @@ function App() {
 }
 
 export default App;
+
+
+
 
