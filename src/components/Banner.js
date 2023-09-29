@@ -15,8 +15,8 @@ function Banner({ title, image }) {
 }
 
 Banner.propTypes = {
-  title: PropTypes.string, // Le titre est désormais optionnel
-  image: PropTypes.string, // L'image est désormais optionnelle
+  title: PropTypes.string, 
+  image: PropTypes.string, 
 };
 
 export default Banner;

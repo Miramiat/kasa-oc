@@ -14,25 +14,33 @@ function Slide({ images }) {
 
   return (
     <div className="slide">
-      <button className="prev-arrow" onClick={prevSlide}>
-        &#8249;
-      </button>
+      {images.length > 1 && ( // Condition pour afficher les flèches et la numérotation
+        <>
+          <button className="prev-arrow" onClick={prevSlide}>
+            &#8249;
+          </button>
+          <button className="next-arrow" onClick={nextSlide}>
+            &#8250;
+          </button>
+          <div className="slide-counter">
+            {currentImage + 1}/{images.length}
+          </div>
+        </>
+      )}
+
       <img
         src={images[currentImage]}
         alt={`Image ${currentImage}`}
         className="slide-image"
       />
-      <button className="next-arrow" onClick={nextSlide}>
-        &#8250;
-      </button>
-      <div className="slide-counter">
-        {currentImage + 1}/{images.length}
-      </div>
     </div>
   );
 }
 
-
 export default Slide;
+
+
+
+
 
 

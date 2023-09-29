@@ -4,6 +4,7 @@ import annoncesData from '../datas/Annonces.json';
 import Slide from '../components/Slide';
 import Details from '../components/Details';
 import AutresDetails from '../components/AutresDetails';
+import { Navigate } from "react-router-dom";
 import { Link } from 'react-router-dom'; 
 
 function ApartmentDscrpt() {
@@ -11,12 +12,7 @@ function ApartmentDscrpt() {
   const apartment = annoncesData.find((apt) => apt.id === id);
 
   if (!apartment) {
-    return <div className='NotF-d'>
-            <h4 className='NotF-h'>404</h4>
-            <h6 className='NotF-h6'>Oups! La page que vous demandez n'existe pas.</h6>
-            <p className='NotF-p'><Link className='NotF-L' to="/">Retourner sur la page d’accueil</Link></p>
-
-  </div>
+    return <Navigate replace to="/notfoud" />
   }
 
   return (

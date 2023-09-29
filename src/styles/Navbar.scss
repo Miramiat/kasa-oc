@@ -42,8 +42,9 @@
       .link {
         text-decoration: none;
         color: #FF6060;
-        margin-left: 20px;
-        font-size: 1.5rem; 
+        margin-left: 50px;
+        font-size: 1.6em;
+        font-weight: 400 !important; 
         @media (max-width: 768px){
             font-size: 0.8rem;
             margin-left: 7px;

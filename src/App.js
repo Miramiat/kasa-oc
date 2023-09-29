@@ -15,6 +15,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/apartments/:id" element={<ApartmentDscrpt />} />
           <Route path="/kasa-oc" element={<Home />} /> {/* Ajoutez cette ligne */}
+          <Route path="/notfoud" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
